@@ -1,0 +1,81 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from preview.colorlib.com/theme/andrea/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jun 2022 14:11:20 GMT -->
+<head>
+    <title>Andrea - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static 'css/main.css' %}"/>
+    <script nonce="cd7387ac-4f1a-4e86-a481-ab31acf8b8e9">(function (w, d) {
+        !function (a, e, t, r) {
+            a.zarazData = a.zarazData || {}, a.zarazData.executed = [], a.zaraz = {deferred: []}, a.zaraz.q = [], a.zaraz._f = function (e) {
+                return function () {
+                    var t = Array.prototype.slice.call(arguments);
+                    a.zaraz.q.push({m: e, a: t})
+                }
+            };
+            for (const e of ["track", "set", "ecommerce", "debug"]) a.zaraz[e] = a.zaraz._f(e);
+            a.addEventListener("DOMContentLoaded", (() => {
+                var t = e.getElementsByTagName(r)[0], z = e.createElement(r), n = e.getElementsByTagName("title")[0];
+                for (n && (a.zarazData.t = e.getElementsByTagName("title")[0].text), a.zarazData.x = Math.random(), a.zarazData.w = a.screen.width, a.zarazData.h = a.screen.height, a.zarazData.j = a.innerHeight, a.zarazData.e = a.innerWidth, a.zarazData.l = a.location.href, a.zarazData.r = e.referrer, a.zarazData.k = a.screen.colorDepth, a.zarazData.n = e.characterSet, a.zarazData.o = (new Date).getTimezoneOffset(), a.zarazData.q = []; a.zaraz.q.length;) {
+                    const e = a.zaraz.q.shift();
+                    a.zarazData.q.push(e)
+                }
+                z.defer = !0;
+                for (const e of [localStorage, sessionStorage]) Object.keys(e).filter((a => a.startsWith("_zaraz_"))).forEach((t => {
+                    try {
+                        a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t))
+                    } catch {
+                        a.zarazData["z_" + t.slice(7)] = e.getItem(t)
+                    }
+                }));
+                z.referrerPolicy = "origin", z.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))), t.parentNode.insertBefore(z, t)
+            }))
+        }(w, d, 0, "script");
+    })(window, document);</script>
+</head>
+<body>
+<div id="colorlib-page">
+    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    <aside id="colorlib-aside" role="complementary" class="js-fullheight">
+        <nav id="colorlib-main-menu" role="navigation">
+            <ul>
+                <li class="colorlib-active"><a href="/">Home</a></li>
+                <li><a href="/fashion/">Fashion</a></li>
+                <li><a href="/travel/">Travel</a></li>
+                <li><a href="/travel/about/">About</a></li>
+                <li><a href="/travel/contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="colorlib-footer">
+            <h1 id="colorlib-logo" class="mb-4"><a href="index-2.html" style="background-image: url(images/bg_1.jpg);">Andrea
+                <span>Moore</span></a></h1>
+            <div class="mb-4">
+                <h3>Subscribe for newsletter</h3>
+                <form action="#" class="colorlib-subscribe-form">
+                    <div class="form-group d-flex">
+                        <div class="icon"><span class="icon-paper-plane"></span></div>
+                        <input type="text" class="form-control" placeholder="Enter Email Address">
+                    </div>
+                </form>
+            </div>
+            <p class="pfooter">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a
+                    href="https://colorlib.com/" target="_blank">Colorlib</a>
+            </p>
+        </div>
+    </aside>
+
+
+
+    {% block content %}
+
+    {% endblock %}
